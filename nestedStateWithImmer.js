@@ -35,6 +35,7 @@ const reducer = (state = initialState, action) => {
       //       },
       //     },
       //   };
+
       return produce(state, (draft) => {
         draft.address.street.area = action.payload;
       });
