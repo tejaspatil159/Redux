@@ -61,6 +61,8 @@ const IceCreamReducer = (state = initialIceCreamState, action) => {
       return { ...state, noOfIceCreams: state.noOfIceCreams - action.payload };
     case ICECREAM_RESTOCKED:
       return { ...state, noOfIceCreams: state.noOfIceCreams + action.payload };
+    case CAKE_ORDERED:
+      return { ...state, noOfIceCreams: state.noOfIceCreams - action.payload };
     default:
       return state;
   }
